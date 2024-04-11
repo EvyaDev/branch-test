@@ -69,7 +69,7 @@
 .App .branches-table table thead {
   background-color: #DB0006;
   color: #FCC916;
-  text-align: center;
+  text-align: right;
 }
 
 .App .branches-table table thead th {
@@ -82,7 +82,7 @@
 }
 
 .App .branches-table table tbody tr:nth-child(even) {
-  background-color: #db00070d;
+  background-color: rgba(219, 0, 7, 0.02);
 }
 
 .App .branches-table table tbody tr:hover {
@@ -106,9 +106,5 @@
 .App .branches-table table tbody td.emp_interview {
   font-size: 13px;
   width: 200px;
-}
-
-.App .branches-table table tbody td.phone {
-  text-align: center;
 }
 /*# sourceMappingURL=App.css.map */

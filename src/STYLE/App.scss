@@ -44,7 +44,7 @@ $red:#DB0006;
             thead {
                 background-color: $red;
                 color: #FCC916;
-                text-align: center;
+                text-align: right;
 
                 th {
                     padding: 10px;
@@ -54,7 +54,7 @@ $red:#DB0006;
             tbody {
                 tr {
                     &:nth-child(even) {
-                        background-color: #db00070d;
+                        background-color: hsla(358, 100%, 43%, 0.02);
                     }
 
                     transition: .2s ease-in;
@@ -80,10 +80,6 @@ $red:#DB0006;
                     &.emp_interview {
                         font-size: 13px;
                         width: 200px;
-                    }
-
-                    &.phone {
-                        text-align: center;
                     }
                 }
             }

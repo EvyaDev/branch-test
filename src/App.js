@@ -79,7 +79,9 @@ function App() {
 
       {/* Filters */}
       <div className='filters-area'>
-        <span>סינון: </span>
+
+        <span>סינון:</span>
+
         <select className='filter-region' onChange={handleRegionChange}>
           <option >בחר אזור</option>
           {regions.map(region => {
@@ -92,11 +94,10 @@ function App() {
         <select className='filter-city' onChange={handleCityChange}>
           <option >בחר עיר</option>
           {cities.map(city => {
-            return (
-              <option value={city}>{city}</option>
-            )
+            return <option key={city} value={city}>{city}</option>
           })}
         </select>
+
         <input placeholder='חיפוש חופשי' onChange={handleInputChange}></input>
       </div>
 
@@ -111,14 +112,14 @@ function App() {
                 <th>שם הסניף</th>
                 <th>כתובת</th>
                 <th>טלפון הסניף</th>
-                <th> JOBS</th>
+                <th> פרטים</th>
               </tr>
             </thead>
 
             <tbody>
               {branches.map((store, i) => {
                 return (
-                  <tr>
+                  <tr key={store.store_id}>
                     <td>{i + 1}.</td>
                     <td className='title'>
                       <p>{store.store_title}</p>
