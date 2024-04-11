@@ -112,6 +112,7 @@ function App() {
                 <th>שם הסניף</th>
                 <th>כתובת</th>
                 <th>טלפון הסניף</th>
+                <th></th>
                 <th> פרטים</th>
               </tr>
             </thead>
@@ -127,6 +128,7 @@ function App() {
                     </td>
                     <td>{store.store_address}</td>
                     <td className="phone"><a href={`tel:${store.store_phone}`}>{store.store_phone}</a></td>
+                    <td className="navigate"><a target="_blank" href={`https://google.com/maps?q=${store.gps_location}`}>ניווט</a></td>
                     <td className='emp_interview'>{store.emp_interview}</td>
                   </tr>
                 )
