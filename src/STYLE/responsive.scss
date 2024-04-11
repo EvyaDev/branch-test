@@ -1,0 +1,36 @@
+// MEDIUM SCREEN
+@media (max-width: 767px) {
+    .App {
+        text-align: center;
+        padding: 0px;
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .filters-area {
+            font-size: 13px;
+            overflow: scroll;
+            flex-direction: column;
+            width: 90%;
+
+            select,
+            input {
+                font-size: 12px;
+                padding: 0 5px;
+                width: 100%;
+            }
+        }
+
+        .branches-table {
+
+            width: 90%;
+            overflow: scroll;
+
+            table {
+                margin: 0 auto;
+
+            }
+        }
+    }
+}

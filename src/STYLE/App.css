@@ -1,0 +1,114 @@
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  gap: 15px;
+  padding: 50px;
+}
+
+.App img {
+  height: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.App .filters-area {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .filters-area select,
+.App .filters-area input {
+  height: 40px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid #DB0006;
+}
+
+.App .branches-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+}
+
+.App .branches-table table {
+  border: 2px #DB0006 solid;
+  border-collapse: collapse;
+  width: 800px;
+}
+
+.App .branches-table table thead {
+  background-color: #DB0006;
+  color: #FCC916;
+  text-align: center;
+}
+
+.App .branches-table table thead th {
+  padding: 10px;
+}
+
+.App .branches-table table tbody tr {
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+}
+
+.App .branches-table table tbody tr:nth-child(even) {
+  background-color: #db00070d;
+}
+
+.App .branches-table table tbody tr:hover {
+  background-color: #00000010;
+}
+
+.App .branches-table table tbody td {
+  padding: 8px;
+  text-align: right;
+  max-width: 200px;
+}
+
+.App .branches-table table tbody td.title {
+  text-align: right;
+}
+
+.App .branches-table table tbody td.title span {
+  font-size: 12px;
+}
+
+.App .branches-table table tbody td.emp_interview {
+  font-size: 13px;
+  width: 200px;
+}
+
+.App .branches-table table tbody td.phone {
+  text-align: center;
+}
+/*# sourceMappingURL=App.css.map */
